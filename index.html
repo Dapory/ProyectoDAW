@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoDaw</title>
+    <title>ClimberO</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <p>hola</p>
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Retos</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Suscripcion</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">Ayuda</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link link--button" href="">Log In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <main id="carousel">
+            <div class="item">
+                <img src="images/1.jpg" alt="Sally Sharpe">
+                <h3 class="name">Sally Sharpe</h3>
+                <p class="occupation">Marketing Admin</p>
+                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, suscipit?</p>
+            </div>
+            <div class="item">
+                <img src="images/2.jpg" alt="Michael John">
+                <h3 class="name">Michael John</h3>
+                <p class="occupation">Cybersecurity Engineer</p>
+                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolore.</p>
+            </div>
+            <div class="item">
+                <img src="images/3.jpg" alt="Mikayla Eddie">
+                <h3 class="name">Mikayla Eddie</h3>
+                <p class="occupation">Software Engineer</p>
+                <p class="testimonial">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus?</p>
+            </div>
+            <div class="item">
+                <img src="images/4.jpg" alt="Eve Smith">
+                <h3 class="name">Eve Smith</h3>
+                <p class="occupation">UI/UX Designer</p>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, beatae?</p>
+            </div>
+            <div class="item">
+                <img src="images/5.jpg" alt="Luke Maxwell">
+                <h3 class="name">Luke Maxwell</h3>
+                <p class="occupation">System Architect</p>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, tempore.</p>
+            </div>
+        </main>
+        <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <script>
+            const carousel = document.getElementById('carousel');
+            const items = document.querySelectorAll('.item');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            const numItems = items.length;
+            let currentPosition = 2; // Start with the middle item
+
+            function updateCarousel() {
+                carousel.style.setProperty('--position', currentPosition + 1);
+            }
+
+            function nextSlide() {
+                currentPosition = (currentPosition + 1) % numItems;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentPosition = (currentPosition - 1 + numItems) % numItems;
+                updateCarousel();
+            }
+
+            nextButton.addEventListener('click', nextSlide);
+            prevButton.addEventListener('click', prevSlide);
+
+            updateCarousel(); // Initialize the carousel position
+        </script>
+    </aside>
+
 </body>
 </html>
