@@ -1,25 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registerstyle.css"/>
-    <title>Registro - Climber0</title>
+    <title>Text area</title>
+    <link rel="stylesheet" href="styleregister.css">
 </head>
 <body>
-    <div class="register_container">
-        <h2 class="crear">Crear Cuenta</h2>
-        <form action="#" method="post" id="registerForm"> 
-            <input type="text" name="nombre" placeholder="Nombre Completo" required/>
-            <input type="email" name="email" placeholder="Correo Electronico" required/>
-            <input type="text" name="telefono" placeholder="Numero de Telefono" required/>
-            <input type="password" name="password" placeholder="Contraseña" required/>
-            <input type="password" name="confirmar" placeholder="Confirmar contraseña" required/>
-            <button type="submit">Registrarse</button>
-            <p class="p">Ya tengo cuenta</p>
-            <button type="submit" href="login.html">Iniciar Sesion</button>
-        </form>
-    </div>
-    <div id="mensaje" class=""error_msg></div>
+    <form>
+        <h2>
+            REGISTRAR
+        </h2>
+        <fieldset>
+            <legend>INFORMACION BASICA</legend>
+            <div class="form_imput">
+                <label for="Nombre">Nombre o apodo</label>
+                <input type="text" placeholder="Daniel / Dapory" id="Nombre">
+            </div>
+            <div class="form_imput">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com" id="Email">
+            </div>
+            <div class="form_imput">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" placeholder="***********" id="contraseña">
+            </div>
+        </fieldset>
+        <div class="form_imput">
+            <label>Tipo de Usuario
+                <select>
+                    <option>Seguidor/a</option>
+                    <option>Empresa</option>
+                    <option>Otro...</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form_imput">
+            <label>Codigo de referente
+                <input list="referente">
+                <datalist id="referente">
+                    <option>DANI001</option>
+                    <option>DANI002</option>
+                    <option>DANI003</option>
+                </datalist>
+            </label>
+        </div>
+
+        <div class="form_imput">
+            <label>Acepto los <a href="terms.html" target="_blank" rel="noreferrer"> terminos y condiciones</a>
+                <input type="checkbox" class="checkbox"></input>
+            </label>
+        </div>
+
+        <div class="form_imput">
+            <button type="button"> Enviar</button>
+        </div>
+    </form>
 </body>
 </html>
