@@ -1,3 +1,8 @@
+/* ==================== */
+/* MENU DE ARRIBA */
+/* ==================== */
+
+
 body{
     font-weight: 100;
     margin: 0;
@@ -67,7 +72,11 @@ header {
     cursor: pointer;
 }
 
+
+/* ==================== */
 /* CARRUSEL DE IMAGENES */
+/* ==================== */
+
 
 aside {
     background-color: rgb(37, 37, 37);
@@ -154,6 +163,11 @@ div.item:nth-of-type(5) {
     opacity: 1; /* Ajusta este valor para la transparencia (0 completamente transparente, 1 completamente opaco) */
 }
 
+/* ==================== */
+/*    PIE DE PAGINA     */
+/* ==================== */
+
+
 .footer {
     background-color: #1a1a1a;
     color: #fff;
@@ -213,56 +227,3 @@ div.item:nth-of-type(5) {
     color: #aaa;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-.page-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.login_container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 2rem;
-    background-color: #222;
-    color: white;
-    border-radius: 10px;
-}
-
-.login_container input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-.login_container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #ff7300;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.error_msg {
-    color: red;
-    margin-top: 10px;
-}
-
-.iniciar {
-    margin-left: 125px;
-}
