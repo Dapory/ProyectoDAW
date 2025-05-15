@@ -15,6 +15,7 @@ header {
     display: flex; /* Para alinear los elementos horizontalmente */
     align-items: center; /* Para centrar verticalmente los elementos */
     padding: 0 20px; /* Añade un poco de espacio a los lados */
+    justify-content: space-between;
 }
 
 .nav__list {
@@ -22,6 +23,7 @@ header {
     padding: 0; /* Elimina el padding por defecto de la lista */
     list-style: none; /* Quita los puntos de la lista */
     display: flex; /* Para alinear los items horizontalmente */
+    gao: 10px;
 }
 
 .nav__item {
@@ -41,22 +43,29 @@ header {
     background-color: rgba(99, 98, 98, 0.616); /* Solo cambia el color de fondo */
 }
 
+.nav__list--buttons {
+    display: flex;
+    gap: 10px;
+}
+
 .link--button {
-    margin-right: 60px;
-    margin-left: 1000px;
     background-color: rgb(255, 255, 255);
     border: 1px solid white;
     padding: 10px 40px;
-    color: rgb(0, 0, 0); /* Cambié el color del texto a negro como en tu ejemplo */
+    color: rgb(0, 0, 0);
     border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .link--button:hover {
-    background: transparent;
+    background-color: transparent;
     color: white;
-    padding: 10px 40px;
+    border-color: white;
+    cursor: pointer;
 }
-
 
 /* CARRUSEL DE IMAGENES */
 
