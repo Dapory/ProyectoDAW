@@ -144,3 +144,78 @@ div.item:nth-of-type(5) {
     background-size: cover; /* Cubre todo el fondo del elemento, manteniendo la proporción */
     opacity: 1; /* Ajusta este valor para la transparencia (0 completamente transparente, 1 completamente opaco) */
 }
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px 20px;
+    margin-top: auto;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_section h2,
+.footer_section h3{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer_section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_section ul li {
+    margin-bottom: 8px;
+}
+
+.footer_section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer_section a:hover {
+    color: #fff;
+}
+
+.footer_section input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer_section button:hover { 
+    background-color: #d35400;
+}
+
+.footer_bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

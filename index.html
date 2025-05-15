@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="page-wrapper">
     <header>
         <nav class="nav">
             <ul class="nav__list">
@@ -24,7 +25,7 @@
                     <a class="nav__link" href="">Ayuda</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link link--button" href="">Log In</a>
+                    <a class="nav__link link--button" href="">LogIn</a>
                 </li>
             </ul>
         </nav>
@@ -63,7 +64,6 @@
                 <p class="occupation">System Architect</p>
                 <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, tempore.</p>
             </div>
-            
         </main>
         <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
 
@@ -95,6 +95,40 @@
             updateCarousel(); // Initialize the carousel position
         </script>
     </aside>
-
+    </div>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_section">
+                    <h2>Climb</h2>
+                    <p>Una red para escaladores donde comparten fotos, rutas y experiencias.</p>
+                </div>
+                <div class="footer_section">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Explorar</a></li>
+                        <li><a href="">Perfil</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </div>     
+                <div class="footer_section">
+                    <ul>
+                        <li><a href="">Foros</a></li>
+                        <li><a href="">Grupos</a></li>
+                        <li><a href="">Eventos</a></li>
+                        <li><a href="">Clases</a></li>
+                    </ul>
+                </div>           
+                <div class="footer_section">
+                    <h3>Suscribete</h3>
+                    <p>Recibe novedades a tu correo</p>
+                    <input type="email" placeholder="escalamos.juntos@gmail.com">
+                    <button>Suscribirme</button>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                © 2025 Climb. Todos los derechos reservados.
+            </div>
+        </footer>
 </body>
 </html>
