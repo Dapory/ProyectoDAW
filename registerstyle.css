@@ -1,0 +1,42 @@
+ body {
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .register_container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 2rem;
+            background-color: #333;
+            border-radius: 10px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+        button {
+            background-color: #ff7300;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .error_msg {
+            color: #ff6b6b;
+            margin-top: 10px;
+        }
+        .success_msg {
+            color: #4caf50;
+            margin-top: 10px;
+        }
+
+        .crear{
+            margin-left:110px;
+        }
+
+        .p {
+            margin-left: 35%;
+        }
