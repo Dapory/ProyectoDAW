@@ -109,3 +109,12 @@ a{
 .descarga {
     color: #000000;
 }
+
+img {
+    display: inline-block   ;
+    position: absolute; /* Para poder posicionarla independientemente del flujo normal */
+    top: 20px;         /* Ajusta la distancia desde la parte superior */
+    left: 20px;        /* Ajusta la distancia desde la izquierda */
+    width: 60px;        /* Reduce el ancho */
+    height: 60px;       /* Reduce la altura */
+}
